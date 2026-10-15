@@ -6,7 +6,7 @@
     let value;   
 
     buttonNext.addEventListener('click', ()=>{
-        changePosition(1);
+        changePosition(+1);
     });
 
     buttonBefore.addEventListener('click', ()=>{
