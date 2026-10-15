@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MASTER EN CSS</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 
-        <meta name="theme-color" content="#2091F9">
+    <meta name="theme-color" content="#2091F9">
 
     <meta name="title" content="Aprende CSS desde cero">
     <meta name="description"
@@ -162,41 +162,41 @@
 
         <section class="testimony">
             <div class="testimony__container container">
-                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+                <button type="button" class="testimony__control" id="before" aria-label="Testimonio anterior"><img src="./images/leftarrow.svg" class="testimony__arrow" alt=""></button>
 
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Christopher Sandoval, <span class="testimony__course">estudiante
+                        <h2 class="subtitle">Mi nombre es Christopher sandoval Rivera<span class="testimony__course">estudiante
                                 de CSS.</span></h2>
-                        <p class="testimony__review">Este curso me ha ayudado a comprender mejor cómo funciona CSS y cómo darle estilo a una página web. Ahora puedo organizar los elementos, elegir colores y crear diseños que se ven bien en distintos dispositivos.</p>
+                        <p class="testimony__review">Aprendí a usar Flexbox y Grid para acomodar los elementos de mi página. Los ejemplos paso a paso me ayudaron a entender cómo adaptar el diseño a celulares y computadoras.</p>
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="./images/face.jpeg" class="testimony__img">
+                        <img src="images/face.jpeg" class="testimony__img">
                     </figure>
                 </section>
 
                 <section class="testimony__body" data-id="2">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Christopher Sandoval, <span class="testimony__course">estudiante de
+                        <h2 class="subtitle">Mi nombre es Christopher sandoval Rivera, <span class="testimony__course">estudiante de
                                 CSS.</span></h2>
-                        <p class="testimony__review">Aprendí a combinar HTML y CSS para crear páginas más bonitas. Los ejemplos prácticos me ayudaron a entender cómo cambiar la apariencia de los elementos y mejorar la presentación del sitio.</p>
+                        <p class="testimony__review">El curso explica los conceptos con claridad y permite practicar mientras avanzas. Ahora puedo cambiar colores, tipografías y espacios para darle personalidad a mis proyectos.</p>
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="./images/Face2.jpeg" class="testimony__img">
+                        <img src="images/Face2.jpeg" class="testimony__img">
                     </figure>
                 </section>
 
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Christopher Sandoval, <span class="testimony__course">estudiante de
+                        <h2 class="subtitle">Mi nombre es Christopher Sandoval Rivera, <span class="testimony__course">estudiante de
                                 CSS.</span></h2>
-                        <p class="testimony__review">Me gustó aprender a usar estilos, colores y espacios para que una página sea más clara. También descubrí que con práctica puedo crear diseños originales y adaptables.</p>
+                        <p class="testimony__review">Las lecciones de diseño adaptable fueron muy útiles. Entendí cómo usar consultas de medios y organizar el contenido para que se vea bien en distintas pantallas.</p>
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="./images/face3.jpeg" class="testimony__img">
+                        <img src="images/face3.jpeg" class="testimony__img">
                     </figure>
                 </section>
 
@@ -204,22 +204,22 @@
                     <div class="testimony__texts">
                         <h2 class="subtitle">Mi nombre es Christopher Sandoval, <span class="testimony__course">estudiante de
                                 CSS.</span></h2>
-                        <p class="testimony__review">Me gustó aprender a usar estilos, colores y espacios para que una página sea más clara. También descubrí que con práctica puedo crear diseños originales y adaptables.</p>
+                        <p class="testimony__review">Las prácticas de animaciones y transiciones me ayudaron a crear botones y elementos más dinámicos. También aprendí a mantener mi código CSS más ordenado.</p>
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="./images/face4.jpeg" class="testimony__img">
+                        <img src="images/face4.jpeg" class="testimony__img">
                     </figure>
                 </section>
 
 
-                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+                <button type="button" class="testimony__control" id="next" aria-label="Siguiente testimonio"><img src="./images/rightarrow.svg" class="testimony__arrow" alt=""></button>
             </div>
         </section>
 
-        <section class="questions container">
+        <section class="questions container" id="preguntas">
             <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">Aquí encontrarás respuestas a las dudas más comunes sobre CSS y los temas que aprenderás durante el curso.</p>
+            <p class="questions__paragraph">Aquí encontrarás respuestas a las dudas más comunes sobre CSS, los temas del curso y las herramientas que utilizarás para diseñar sitios web.</p>
 
             <section class="questions__container">
                 <article class="questions__padding">
@@ -230,7 +230,7 @@
                             </span>
                         </h3>
 
-                        <p class="questions__show">CSS significa Hojas de Estilo en Cascada. Es el lenguaje que se utiliza para definir la apariencia de una página web: colores, fuentes, márgenes, tamaños y distribución. Junto con HTML, permite crear sitios atractivos y fáciles de navegar.</p>
+                        <p class="questions__show">CSS (Cascading Style Sheets, u hojas de estilo en cascada) es el lenguaje que define la apariencia de una página web. Permite controlar colores, fuentes, márgenes, tamaños, distribución y adaptación a diferentes dispositivos. Se utiliza junto con HTML, que organiza el contenido.</p>
                     </div>
                 </article>
 
@@ -242,7 +242,7 @@
                             </span>
                         </h3>
 
-                        <p class="questions__show">Aprenderás a utilizar selectores, colores, tipografías, márgenes, rellenos, Flexbox, CSS Grid y animaciones. También practicarás cómo adaptar tu diseño para que funcione en computadoras, tabletas y celulares.</p>
+                        <p class="questions__show">Aprenderás a dar estilo a textos e imágenes, manejar el modelo de caja, posicionar elementos, construir diseños con Flexbox y Grid, crear animaciones y adaptar la página a móviles, tabletas y computadoras. Los ejercicios te ayudarán a aplicar cada tema.</p>
                     </div>
                 </article>
 
@@ -254,47 +254,45 @@
                             </span>
                         </h3>
 
-                        <p class="questions__show">CSS Grid es un sistema de diseño que permite organizar elementos en filas y columnas. Es muy útil para crear estructuras ordenadas, como galerías, tarjetas y secciones completas, sin tener que acomodar cada elemento manualmente.</p>
+                        <p class="questions__show">CSS Grid es un sistema de diseño que permite organizar elementos en filas y columnas. Es especialmente útil para crear estructuras de página, galerías y distribuciones complejas de forma ordenada y adaptable.</p>
                     </div>
                 </article>
             </section>
 
             <section class="questions__offer">
-                <h2 class="subtitle">¿Estas listo para aprender CSS?</h2>
-                <p class="questions__copy">¡Es momento de poner manos a la obra! Practica cada tema, experimenta con diferentes estilos y construye tu propia página web paso a paso. Con paciencia y creatividad podrás transformar una estructura sencilla en un sitio increíble.</p>
-                <a href="#" class="cta">Aprende ahora</a>
+                <h2 class="subtitle">¿Estás listo para aprender CSS?</h2>
+                <p class="questions__copy">Empieza desde los conceptos básicos y avanza con ejercicios prácticos. Al terminar, tendrás las herramientas para diseñar páginas web más atractivas, organizadas y adaptables usando CSS3.</p>
+                <a href="#planes" class="cta">Aprende ahora</a>
             </section>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacto">
         <section class="footer__container container">
             <nav class="nav nav--footer">
                 <h2 class="footer__title">Curso CSS.</h2>
 
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Inicio</a>
+                        <a href="#inicio" class="nav__links">Inicio</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Acerca de</a>
+                        <a href="#acerca" class="nav__links">Acerca de</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Contacto</a>
+                        <a href="#contacto" class="nav__links">Contacto</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Blog</a>
+                        <a href="#preguntas" class="nav__links">Blog</a>
                     </li>
                 </ul>
             </nav>
 
-            <form action="https://formspree.io/f/mgaozdlq"
-  method="POST"
-  
-                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+            <form class="footer__form" action="https://formspree.io/f/xnpjbdeg" method="POST">
+                <h2 class="footer__newsletter">Suscríbete a </h2>
                 <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input"  name="email">
-                    <input type="submit" value="Registrate" class="footer__submit">
+                    <input type="email" placeholder="Email:" class="footer__input" name="email">
+                    <input type="submit" value="Regístrate" class="footer__submit">
                 </div>
             </form>
         </section>
@@ -306,7 +304,7 @@
                 <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
             </div>
 
-            <h3 class="footer__copyright">Derechos reservados &copy; Jordan Alexander</h3>
+            <h3 class="footer__copyright">Derechos reservados &copy;Christopher Sandoval Rivera</h3>
         </section>
     </footer>
 
